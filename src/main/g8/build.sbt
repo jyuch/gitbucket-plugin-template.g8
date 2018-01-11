@@ -1,9 +1,5 @@
-// give the user a nice default project!
-lazy val root = (project in file(".")).
-  settings(
-    inThisBuild(List(
-      organization := "com.example",
-      scalaVersion := "2.11.8"
-    )),
-    name := "gitbucket-plugin-template.g8"
-  )
+name := "$name$"
+organization := "io.github.gitbucket"
+version := "1.0.0"
+scalaVersion := "$scala_version$"
+gitbucketVersion := "$gitbucket_version$"
