@@ -1,12 +1,9 @@
-A [Giter8][g8] template for ...!
+A **unofficial** [Giter8](http://www.foundweekends.org/giter8/) template for [gitbucket-plugin-template](https://github.com/gitbucket/gitbucket-plugin-template)
 
-Template license
-----------------
-Written in <YEAR> by <AUTHOR NAME> <AUTHOR E-MAIL ADDRESS>
-[other author/contributor lines as appropriate]
+```
+sbt new jyuch/gitbucket-plugin-template.g8
+```
 
-To the extent possible under law, the author(s) have dedicated all copyright and related
-and neighboring rights to this template to the public domain worldwide.
-This template is distributed without any warranty. See <http://creativecommons.org/publicdomain/zero/1.0/>.
+Run `sbt assembly` and copy generated `/target/scala-2.12/gitbucket-helloworld-plugin-assembly-1.0.0.jar` to `~/.gitbucket/plugins/` (If the directory does not exist, create it by hand before copying the jar), or just run `sbt install`.
 
-[g8]: http://www.foundweekends.org/giter8/
+Then start GitBucket and access to http://localhost:8080/helloworld in your web browser, you will see `Hello World!` response.
